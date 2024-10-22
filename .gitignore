@@ -1,0 +1,8 @@
+*.jpg
+*.JPG
+*.jpeg
+*.png
+*.gif
+images/
+.DS_Store
+.env
