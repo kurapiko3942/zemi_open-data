@@ -1,269 +1,79 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>宮崎ゼミ27期</title>
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>宮崎ゼミ AI.API A班</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- ローディング画面 -->
-    <div id="loading">
-        <p>loading...</p>
-        <div id="loading-screen"></div>
-    </div>
 
-    <!-- ナビゲーションメニュー -->
-    <nav>
-        <button id="menu-open" class="btn-menu">
-            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                <title>メニューを開く</title>
-                <path clip-rule="evenodd" d="m4.25 8c0-.41421.33579-.75.75-.75h14c.4142 0 .75.33579.75.75s-.3358.75-.75.75h-14c-.41421 0-.75-.33579-.75-.75zm0 4c0-.4142.33579-.75.75-.75h14c.4142 0 .75.3358.75.75s-.3358.75-.75.75h-14c-.41421 0-.75-.3358-.75-.75zm.75 3.25c-.41421 0-.75.3358-.75.75s.33579.75.75.75h14c.4142 0 .75-.3358.75-.75s-.3358-.75-.75-.75z" fill-rule="evenodd"/>
-            </svg>
-        </button>
-        <div id="menu-panel">
-            <button id="menu-close" class="btn-menu">
-                <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <title>メニューを閉じる</title>
-                    <path clip-rule="evenodd" d="m7.53033 6.46967c-.29289-.29289-.76777-.29289-1.06066 0s-.29289.76777 0 1.06066l4.46963 4.46967-4.46963 4.4697c-.29289.2929-.29289.7677 0 1.0606s.76777.2929 1.06066 0l4.46967-4.4696 4.4697 4.4696c.2929.2929.7677.2929 1.0606 0s.2929-.7677 0-1.0606l-4.4696-4.4697 4.4696-4.46967c.2929-.29289.2929-.76777 0-1.06066s-.7677-.29289-1.0606 0l-4.4697 4.46963z" fill-rule="evenodd"/>
-                </svg>
-            </button>
-            <ul class="menu-list">
-                <li><a href="#">プロジェクト概要</a></li>
-                <li><a href="#">進捗状況</a></li>
-                <li><a href="#">メンバー提案</a></li>
-                <li><a href="#">今後の予定</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE COMPANY"></a></h1>
+<nav id="menubar">
 
-    <section class="hero">
-        <h1 class="title">宮﨑ゼミ27期<br>第２班</h1>
-    </section>
+<ul>
+<li><a href="#first">ㅇ_ㅇ</a></li>
+</ul>
+</nav>
+</header>
 
-    <section class="agenda">
-        <div class="wrapper">
-            <h2 class="title fadein">前回のゼミからの進捗</h2>
-            <p class="fadein">
-                <span class="s_h1">開発方針の決定</span>
-                <br>
-                歴代受賞作の分析結果から、以下の方針を決定：
-                <br><br>
-                <ol>
-                    <li>班内コンペによる一つのアイデア選定
-                        <br>・完成度を重視
-                        <br>・アイデアの統合は行わない
-                    </li>
-                    <li>スプレッドシートによるタスク管理
-                        <br>・完成度向上のため
-                        <br>・メンバー間の負担調整
-                    </li>
-                    <li>デザインツールの選定
-                        <br>・基本はFigmaを使用
-                        <br>・必要に応じてCanvaも利用
-                        <br>・UMLなどのシステム設計はFigmaで統一
-                    </li>
-                </ol>
-            </p>
-        </div>
-    </section>
-    
-    <section class="explanation">
-        <div class="wrapper">
-            <h2 class="title fadein">今後の作業について</h2>
-            <p class="fadein">
-                <span class="s_h2">プランの練り直し</span>
-                <br>
-                各メンバーは以下の観点でアイデアを再検討：
-                <br><br>
+<div id="container">
+
+<div id="contents">
+    <section id="first">
+        <p>ビーコン転覆</p>
+        <p>&emsp;コンセプト：QOLを向上するアプリ</p>
+        <p><strong>課題</strong></p>
+        <ul>
+            <li>空き家や場所に関する情報が分かりにくい</li>
+            <li>遊ぶ際、いつも似たような場所にしか行けない</li>
+            <li>住居の選択が難しい</li>
+        </ul>
+
+        <p><strong>プラン</strong></p>
+        <ul>
+            <li>車いす利用者に優しいルートの案内</li>
+            <li>駅までのルート表示</li>
+            <li>家探し支援機能の追加</li>
+        </ul>
+
+        <p><strong>アプリ仕様</strong></p>
+        <ol>
+            <li>通勤・通学場所の設定が可能</li>
+            <li>職場や学校の指定ができる（例：職場を高槻に設定し、今出川付近の住居を検索）</li>
+            <li>以下の情報を表示することで、ユーザーの生活の質（QOL）を改善する：
                 <ul>
-                    <li>解決する課題の明確化</li>
-                    <li>デザインの具体化</li>
-                    <li>アプリの使用フロー</li>
-                    <li>類似サービスとの差別化</li>
-                    <li>社会的インパクト</li>
-                    <li>必要な機能（デザインと併せて検討）</li>
-                    <li>プラットフォーム選定（アプリ/Web）</li>
+                    <li>通勤・通学時間の目安</li>
+                    <li>電車の編成や運行情報</li>
+                    <li>周辺の家賃相場</li>
+                    <li>AIを活用した生活プランの提案（例：そのエリアからの通勤シミュレーション）</li>
+                    <li>人流データの可視化で安全かつ便利な生活の支援</li>
                 </ul>
-                <br>
-                <span class="s_h2">タスク管理について</span>
-                <br>
-                ・スプレッドシートによる進捗管理を導入
-                <br>
-                ・タスクの可視化による効率的な開発
-                <br>
-                ・メンバー間の作業負担の適切な分配
-                <br><br>
-                <span class="s_h2">次週までの予定</span>
-                <br>
-                ・各自プランの練り直し
-                <br>
-                ・班内コンペの実施
-                <br>
-                ・最終案の決定とゼミでの発表
-            </p>
-        </div>
-    </section>
+            </li>
+        </ol>
 
-    <section class="explanation">
-        <div class="wrapper">
-            <h2 class="title fadein">開発方針の詳細</h2>
-            <p class="fadein">
-                <span class="s_h2">班内コンペについて</span>
-                <br>
-                歴代受賞作の分析から、完成度を担保するため、各々のアイデアを統合せず、
-                一つの案を軸にして開発を進めることを決定。
-                <br><br>
-                <span class="s_h2">プラン練り込みの観点</span>
-                <ul>
-                    <li>解決する課題</li>
-                    <li>デザイン</li>
-                    <li>アプリの使用フロー</li>
-                    <li>類似サービス</li>
-                    <li>社会的インパクト</li>
-                    <li>必要な機能（デザインと併せて検討）</li>
-                    <li>プラットフォーム選定（アプリ/Web）</li>
-                </ul>
-            </p>
-        </div>
-    </section>
+        <p>&emsp;このアプリを通じて、ユーザーが自分に最適な生活環境を見つけられるよう支援し、QOLの向上を目指します。＋空き家対策、人口分散、資源をフル活用することによって最適化</p>
 
-    <section class="concept">
-        <div class="wrapper">
-            <h2 class="title fadein">デーチャレ個人草案</h2>
-            
-            <p class="fadein">
-                <span class="s_h1">ゆいなの提案</span>
-                <br>
-                ミニ東京の京都版
-                <br>・バスの運行状況を予想
-                <br>・特に巻くことに対しての対策
-                <br><span class="s_h2">〈ミニ東京について〉</span>
-                <br>・リアルタイムで公共交通が3Dマップに表示される
-                <br>・JR西日本のtabiwaアプリ→バスでしか観光地と結びつけられない
-                <br>・バスのminiTokyo版を作る
-                <br>・斬新なUIで見せ方を変えることも可能
-            </p>
+    </section>        
+</div>
 
-            <p class="fadein">
-                <span class="s_h1">にぱ＆おおやの提案</span>
-                <br><span class="s_h2">【待ち合わせアプリ】</span>
-                <br>待ち合わせで不便なこと：
-                <br>・「もうすぐ着く」から時間かかっている
-                <br>・歩行者のGPS
-                <br>・二人のGPSから中間地点
-                <br>・ルーレットで待ち合わせ
-                <br>・待ち時間を忘れさせる
-                <br>・待ち合わせの時だけ利用
-                <br><span class="s_h2">利用するオープンデータ：</span>
-                <br>・二人の位置情報
-                <br>・公共交通の運行状況
-                <br>・3Dの位置情報（標高）
-                <br>・自転車を乗り換えに入れる
-            </p>
 
-            <p class="fadein">
-                <span class="s_h1">じぇほの提案</span>
-                <br><span class="s_h2">DelayGuide</span>
-                <br>・日帰りで面接に行く場合、遅延による面接遅刻を心配
-                <br>・梅田から帰る時に阪急電車の終了時刻不明な遅延でJR選択に迷う
-                <br><span class="s_h2">機能：</span>
-                <br>⓵ 遅れることが不安→過去遅延発生が少なかったルートを案内
-                <br>⓶ 遅延時間が不明確な場合：
-                <br>　・過去の同じ理由での遅延平均時間を表示
-                <br>　・代替ルートを案内
-                <br>　・遅延証明書用の遅延情報リンクを表示
-                <br>特に土地勘がない場所で有用
-            </p>
+<footer>
+<small>Copyright&copy; <a href="index.html">SAMPLE COMPANY</a> All Rights Reserved.</small>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
 
-            <p class="fadein">
-                <span class="s_h1">かなやまの提案</span>
-                <br><span class="s_h2">TravelHub - 観光混雑予測・分散システム</span>
-                <br><br>
-                <span class="s_h2">【コンセプト】</span>
-                <br>・GitHubのようにプランを管理し、観光地の混雑を緩和
-                <br>・観光客の分散による地域活性化
-                <br><br>
-                <span class="s_h2">【コンフリクト検出の仕組み】</span>
-                <br>1. プラン登録
-                <br>・各ユーザーが旅行計画を登録
-                <br>・時間と場所の情報を記録
-                <br><br>
-                2. 混雑予測
-                <br>・同じ時間・場所に集中するプランを検出
-                <br>・施設の収容人数と比較
-                <br>・季節やイベント情報も考慮
-                <br><br>
-                3. 自動提案
-                <br>・混雑を避けた時間帯の提案
-                <br>・代替スポットの紹介
-                <br>・新規ルートの作成
-                <br><br>
-                <span class="s_h2">【具体例：清水寺での活用】</span>
-                <br>・14時に100人以上の予定を検知
-                <br>・16時以降の空き時間を提案
-                <br>・近隣の穴場スポットを紹介
-                <br>・混雑を避けた周遊ルートを提示
-                <br><br>
-                <span class="s_h2">【期待される効果】</span>
-                <br>・観光地の混雑緩和
-                <br>・隠れた観光スポットの活性化
-                <br>・旅行者の満足度向上
-                <br>・地域全体の経済効果
-            </p>
+<!--jQueryファイルの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-            <p class="fadein">
-                <span class="s_h1">こうだいの提案</span>
-                <br><span class="s_h2">大規模駅特化型道案内アプリ</span>
-                <br>・商品の場所と同程度に道を尋ねられる
-                <br>・ユーザーによる道案内の投稿システム
-                <br>・迷った経験の共有機能
-                <br>・ダンジョン攻略風のUI
-                <br>・最速ルートの表示
-                <br>・GPS非対応でも投稿で解決
-                <br>・Q&Aベースのシステム
-                <br>・Googlemapとの差別化重視
-            </p>
-        </div>
-    </section>
+<!--ページの上部へ戻るボタンとスクリプト-->
+<p class="scroll"><a href="#">↑</a></p>
+<script src="js/scroll.js"></script>
 
-    <section class="concept">
-        <div class="wrapper">
-            <h2 class="title fadein">今後の進捗予定</h2>
-            <p class="fadein">
-                <span class="s_h2">開発スケジュール</span>
-                <br>
-                <span class="s_h3"> プラン確定（10/25~11/1）</span>
-                <br>・各自プランの練り直し
-                <br>・班内コンペ実施
-                <br><br>
-                <span class="s_h3"> 実現可能性検証（11/1~11/8）</span>
-                <br>・データに基づく実現可能性の検証
-                <br>・必要なリソースの洗い出し
-                <br><br>
-                <span class="s_h3">設計フェーズ（11/8~12/22）</span>
-                <br>・システム設計の見直し
-                <br>・デザイン設計
-                <br>・Figmaを用いたUML作成
-                <br><br>
-                <span class="s_h3"> 開発フェーズ（11/15~12月末）</span>
-                <br>・並行開発の開始
-                <br>・進捗管理の徹底
-                <br><br>
-                <span class="s_h3"> 仕上げ（1月以降）</span>
-                <br>・テスト実施
-                <br>・プレゼンデモの作成
-                <br>・最終調整
-                아니예요,아니예요,테스트
-            </p>
-        </div>
-    </section>
 </body>
 </html>
